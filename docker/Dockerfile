@@ -13,5 +13,10 @@ RUN jupyter nbextension enable collapsible_headings/main
 RUN jupyter nbextension enable code_prettify/autopep8
 RUN jupyter nbextension enable toc2/main
 RUN jupyter nbextension enable equation-numbering/main
-RUN jupyter labextension install @jupyterlab/toc
+RUN jupyter nbextension enable ruler/main
+#RUN jupyter labextension install @jupyterlab/toc
 ADD classic.tplx /opt/conda/lib/python3.6/site-packages/nbconvert/templates/latex/
+RUN pip install git+https://github.com/zulissi/techela.git
+#RUN conda install flake8
+#RUN jupyter labextension install jupyterlab-flake8
+

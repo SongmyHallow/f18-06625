@@ -29,6 +29,7 @@
     %Updated MathJax Compatibility (if future behaviour of the notebook changes this may be removed)
     \renewcommand{\TeX}{\ifmmode \textrm{\Oldtex} \else \textbackslash TeX \fi}
     \renewcommand{\LaTeX}{\ifmmode \Oldlatex \else \textbackslash LaTeX \fi}
+    \newcommand{\require}[1]{}
     
     % Header Adjustments
     \renewcommand{\paragraph}{\textbf}
