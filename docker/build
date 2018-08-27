@@ -1,0 +1,3 @@
+docker build -t jupyter_06625 .
+docker tag jupyter_06625 zulissi/jupyter_06625
+docker push zulissi/jupyter_06625
